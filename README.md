@@ -15,5 +15,22 @@ This project implements a real-time data pipeline to collect, process, and store
 - **Apache Spark Streaming** – Processes data from Kafka and transforms it before storage.
 - **MySQL** – Stores the final structured weather data for analysis or querying.
 - **World Weather Online API** – Provides real-time weather data via RESTful requests.
-- **Python** – Main programming language for DAGs, Spark jobs, and data handling.
-- **SQL** – Used to define database schema and perform queries on stored data.
+
+## 🧾 API Input Structure
+
+The weather data is fetched from the [World Weather Online API](https://www.worldweatheronline.com/).
+
+Example JSON snippet:
+
+```json
+{
+  "data": {
+    "current_condition": [{
+      "temp_C": "33",
+      "windspeedKmph": "12",
+      "pressure": "1010",
+      "humidity": "62",
+      "observation_time": "07:00 AM"
+    }]
+  }
+}
