@@ -8,10 +8,12 @@ This project implements a real-time data pipeline to collect, process, and store
 
 ![System Architecture](assets/workflow.png)
 
-The system is designed as a real-time data pipeline with the following components:
+## 📦 Technologies Used
 
-- **WorldWeatherOnline API** is used as the external weather data source.
-- **Apache Airflow** runs multiple DAGs every hour to fetch weather data and push messages to **Kafka**.
-- **Apache Kafka** acts as the message broker, buffering weather data streams.
-- **Apache Spark Streaming** reads from Kafka, processes and transforms the data in real time.
-- **MySQL** stores the structured and cleaned data for further analysis or dashboarding.
+- **Apache Airflow** – Orchestrates and schedules hourly DAGs to fetch weather data.
+- **Apache Kafka** – Acts as a real-time message queue for streaming data.
+- **Apache Spark Streaming** – Processes data from Kafka and transforms it before storage.
+- **MySQL** – Stores the final structured weather data for analysis or querying.
+- **World Weather Online API** – Provides real-time weather data via RESTful requests.
+- **Python** – Main programming language for DAGs, Spark jobs, and data handling.
+- **SQL** – Used to define database schema and perform queries on stored data.
