@@ -29,7 +29,7 @@ The weather data is fetched from the [World Weather Online API](https://www.worl
 
 Example JSON snippet:
 
-```json
+```text
 {
      "data": {
          "current_condition": [{
