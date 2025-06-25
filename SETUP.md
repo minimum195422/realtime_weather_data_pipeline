@@ -212,11 +212,7 @@ mkdir ~/weather_project
 cd ~/weather_project
 ```
 
-Place your Spark streaming script in this directory. For example, save your main streaming logic as:
-
-```bash
-spark_streaming.py
-```
+Place your Spark streaming script in this directory. For example, ➡️ [View full Spark streaming code](./spark/spark_streaming.py)
 
 ### ✅ Add MySQL Connector
 
@@ -296,5 +292,3 @@ pip install kafka-python boto3
 - `kafka-python`: Used to interact with Kafka producers and consumers in Python.
 
 - `boto3`: AWS SDK for Python, required for working with AWS services such as S3, SQS, or DynamoDB.
-
-
