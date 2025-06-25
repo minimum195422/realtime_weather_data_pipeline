@@ -31,18 +31,48 @@ Example JSON snippet:
 
 ```text
 {
-     "data": {
-         "current_condition": [{
-         "temp_C": "33",
-         "temp_F": "33",
-         "windspeedKmph": "12",
-         "pressure": "1010",
-         "humidity": "62",
-         "observation_time": "07:00 AM"
-         ...
-     }]
+  "data": {
+    "request": [
+      {
+        "type": "City",
+        "query": "Hanoi, Vietnam"
+      }
+    ],
+    "current_condition": [
+      {
+        "observation_time": "03:29 AM",
+        "temp_C": "28",
+        "temp_F": "83",
+        "weatherCode": "302",
+        "weatherIconUrl": [
+          {
+            "value": "https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0018_cloudy_with_heavy_rain.png"
+          }
+        ],
+        "weatherDesc": [
+          {
+            "value": "Rain Shower"
+          }
+        ],
+        "windspeedMiles": "8",
+        "windspeedKmph": "13",
+        "winddirDegree": "149",
+        "winddir16Point": "SSE",
+        "precipMM": "0.2",
+        "precipInches": "0.0",
+        "humidity": "84",
+        "visibility": "10",
+        "visibilityMiles": "6",
+        "pressure": "1008",
+        "pressureInches": "30",
+        "cloudcover": "25",
+        "FeelsLikeC": "31",
+        "FeelsLikeF": "87",
+
+        "uvIndex": "8"
+      }
+    ],
     ...
- }
 }
 ```
 
