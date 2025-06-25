@@ -244,9 +244,9 @@ This command:
 
 - Executes your `spark_streaming.py` script
 
-## ☁️ Installing AWS CLI and Required Python Libraries
+## ☁️ 4. Installing AWS CLI and Required Python Libraries
 
-## ✅ Install AWS CLI (v2)
+### ✅ Install AWS CLI (v2)
 
 Download and install the AWS Command Line Interface:
 
